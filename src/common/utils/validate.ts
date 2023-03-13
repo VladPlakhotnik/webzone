@@ -14,4 +14,9 @@ export const validationSchema = Yup.object({
   repeatPassword: Yup.string()
     .oneOf([Yup.ref('password'), ''], 'Passwords must match')
     .required('Repeat Password field is required'),
+  firstName: Yup.string().required('Required'),
+  lastName: Yup.string().required('Required'),
+  phone: Yup.number().required('Required'),
+  country: Yup.string().required('Required'),
+  city: Yup.string().required('Required'),
 })

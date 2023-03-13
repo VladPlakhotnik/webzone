@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
           <Logo src='/assets/img/jpg/logo.png' alt='WebZone' />
         </NavLink>
         <BlockLinkes>
-          <NavLink to='/careers'>
+          <NavLink to='/products'>
             <Link>Products</Link>
           </NavLink>
           <NavLink to='/docs'>
@@ -28,8 +28,8 @@ export const Header: React.FC = () => {
           <NavLink to='/pricing'>
             <Link>Pricing</Link>
           </NavLink>
-          <NavLink to='/careers'>
-            <Link>Careers</Link>
+          <NavLink to='/cv'>
+            <Link>CV Generator</Link>
           </NavLink>
           <NavLink to='/bloge'>
             <Link>Blog</Link>

@@ -1,0 +1,116 @@
+[
+  {
+    "subject": "html",
+    "themes": [
+      {
+        "slug": "introduction",
+        "topic": "Introduction to HTML",
+        "question-answer": [
+          {
+            "question": "What is HTML?",
+            "answer": "HTML literally means Hypertext Markup Language (hypertext Markup language). From the decoding of the name, it is clear that the tool is used to control the display of content on an Internet page, its structuring. The technology of hypertext markup of web pages was proposed in 1989 by the British specialist Tim Berners-Lee. At first, the language was used for the exchange of scientific working documentation between engineers of the CERN Institute, of which Berners-Lee was an employee. A little later, the use of the HTML language was expanded so much that it, along with such basic elements as HTTP and URL, formed the basis of the World Wide Web."
+          },
+          {
+            "question": "Why HTML is needed?",
+            "answer": "When a user visits a website, the browser pulls up an HTML file with data about the structure and content of the web page. The function of HTML is to build an external base, the foundation, but the launch of the site itself is not included in the functionality. HTML only specifies where the elements should be located, what their basic visual is, where to get styles for elements and scripts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "css",
+    "themes": [
+      {
+        "slug": "introduction",
+        "topic": "Introduction to CSS",
+        "question-answer": [
+          {
+            "question": "What is CSS?",
+            "answer": "CSS (Cascade Style Sheets) is a formal language for describing the appearance of a page; cascading style sheets. The first mention of CSS appeared in 1994, when Haakon Vium Lee proposed using the CSS language for stylistic design of web pages. And on December 17, 1996, the first specification (CSS1) was published, and it was recommended for use by the World Wide Web Consortium (W3C). At the moment, the current version is CSS3, which has greatly advanced in its capabilities when compared with previous versions."
+          },
+          {
+            "question": "Why CSS is needed?",
+            "answer": "At the dawn of the development of the Internet, developers made do with HTML for the layout of web pages, but at some point its capabilities were clearly not enough for page design tasks. The site owners wanted to create sites with individual, often complex designs in order to attract more users. Before the advent of CSS, pages were designed only inside the same document using HTML. CSS technologies made it possible to separate the content of the document and its visual design. For example, thanks to them, it became easy to apply a single style for each document by simply connecting a CSS file to HTML. Now it was enough to change the value of any disposal property in only one file, and it was applied on all pages where this file was connected."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "javascript",
+    "themes": [
+      {
+        "slug": "introduction",
+        "topic": "Introduction to Javascript",
+        "question-answer": [
+          {
+            "question": "What is Javascript?",
+            "answer": "CSS (Cascade Style Sheets) is a formal language for describing the appearance of a page; cascading style sheets. The first mention of CSS appeared in 1994, when Haakon Vium Lee proposed using the CSS language for stylistic design of web pages. And on December 17, 1996, the first specification (CSS1) was published, and it was recommended for use by the World Wide Web Consortium (W3C). At the moment, the current version is CSS3, which has greatly advanced in its capabilities when compared with previous versions."
+          },
+          {
+            "question": "Why Javascript is needed?",
+            "answer": "At the dawn of the development of the Internet, developers made do with HTML for the layout of web pages, but at some point its capabilities were clearly not enough for page design tasks. The site owners wanted to create sites with individual, often complex designs in order to attract more users. Before the advent of CSS, pages were designed only inside the same document using HTML. CSS technologies made it possible to separate the content of the document and its visual design. For example, thanks to them, it became easy to apply a single style for each document by simply connecting a CSS file to HTML. Now it was enough to change the value of any disposal property in only one file, and it was applied on all pages where this file was connected."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "api",
+    "themes": [
+      {
+        "slug": "introduction",
+        "topic": "Introduction to API",
+        "question-answer": [
+          {
+            "question": "What is API?",
+            "answer": "CSS (Cascade Style Sheets) is a formal language for describing the appearance of a page; cascading style sheets. The first mention of CSS appeared in 1994, when Haakon Vium Lee proposed using the CSS language for stylistic design of web pages. And on December 17, 1996, the first specification (CSS1) was published, and it was recommended for use by the World Wide Web Consortium (W3C). At the moment, the current version is CSS3, which has greatly advanced in its capabilities when compared with previous versions."
+          },
+          {
+            "question": "Why API is needed?",
+            "answer": "At the dawn of the development of the Internet, developers made do with HTML for the layout of web pages, but at some point its capabilities were clearly not enough for page design tasks. The site owners wanted to create sites with individual, often complex designs in order to attract more users. Before the advent of CSS, pages were designed only inside the same document using HTML. CSS technologies made it possible to separate the content of the document and its visual design. For example, thanks to them, it became easy to apply a single style for each document by simply connecting a CSS file to HTML. Now it was enough to change the value of any disposal property in only one file, and it was applied on all pages where this file was connected."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "react",
+    "themes": [
+      {
+        "slug": "introduction",
+        "topic": "Introduction to React",
+        "question-answer": [
+          {
+            "question": "What is React?",
+            "answer": "CSS (Cascade Style Sheets) is a formal language for describing the appearance of a page; cascading style sheets. The first mention of CSS appeared in 1994, when Haakon Vium Lee proposed using the CSS language for stylistic design of web pages. And on December 17, 1996, the first specification (CSS1) was published, and it was recommended for use by the World Wide Web Consortium (W3C). At the moment, the current version is CSS3, which has greatly advanced in its capabilities when compared with previous versions."
+          },
+          {
+            "question": "Why React is needed?",
+            "answer": "At the dawn of the development of the Internet, developers made do with HTML for the layout of web pages, but at some point its capabilities were clearly not enough for page design tasks. The site owners wanted to create sites with individual, often complex designs in order to attract more users. Before the advent of CSS, pages were designed only inside the same document using HTML. CSS technologies made it possible to separate the content of the document and its visual design. For example, thanks to them, it became easy to apply a single style for each document by simply connecting a CSS file to HTML. Now it was enough to change the value of any disposal property in only one file, and it was applied on all pages where this file was connected."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "vue",
+    "themes": [
+      {
+        "slug": "introduction",
+        "topic": "Introduction to VUE",
+        "question-answer": [
+          {
+            "question": "What is VUE?",
+            "answer": "CSS (Cascade Style Sheets) is a formal language for describing the appearance of a page; cascading style sheets. The first mention of CSS appeared in 1994, when Haakon Vium Lee proposed using the CSS language for stylistic design of web pages. And on December 17, 1996, the first specification (CSS1) was published, and it was recommended for use by the World Wide Web Consortium (W3C). At the moment, the current version is CSS3, which has greatly advanced in its capabilities when compared with previous versions."
+          },
+          {
+            "question": "Why VUE is needed?",
+            "answer": "At the dawn of the development of the Internet, developers made do with HTML for the layout of web pages, but at some point its capabilities were clearly not enough for page design tasks. The site owners wanted to create sites with individual, often complex designs in order to attract more users. Before the advent of CSS, pages were designed only inside the same document using HTML. CSS technologies made it possible to separate the content of the document and its visual design. For example, thanks to them, it became easy to apply a single style for each document by simply connecting a CSS file to HTML. Now it was enough to change the value of any disposal property in only one file, and it was applied on all pages where this file was connected."
+          }
+        ]
+      }
+    ]
+  }
+]

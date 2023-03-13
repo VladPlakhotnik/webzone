@@ -19,19 +19,19 @@ export const Header: React.FC = () => {
           <Logo src='/assets/img/jpg/logo.png' alt='WebZone' />
         </NavLink>
         <BlockLinkes>
-          <NavLink to='careers'>
+          <NavLink to='/careers'>
             <Link>Products</Link>
           </NavLink>
-          <NavLink to='docs'>
+          <NavLink to='/docs'>
             <Link>Docs</Link>
           </NavLink>
-          <NavLink to='support'>
+          <NavLink to='/support'>
             <Link>Pricing</Link>
           </NavLink>
-          <NavLink to='careers'>
+          <NavLink to='/careers'>
             <Link>Careers</Link>
           </NavLink>
-          <NavLink to='bloge'>
+          <NavLink to='/bloge'>
             <Link>Blog</Link>
           </NavLink>
         </BlockLinkes>
@@ -39,10 +39,10 @@ export const Header: React.FC = () => {
 
       <ContainerSecond>
         <BlockButtons>
-          <NavLink to='login'>
+          <NavLink to='/login'>
             <Login>Log in</Login>
           </NavLink>
-          <NavLink to='join'>
+          <NavLink to='/join'>
             <Join>Join</Join>
           </NavLink>
         </BlockButtons>

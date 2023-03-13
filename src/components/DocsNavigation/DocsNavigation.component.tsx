@@ -1,57 +1,27 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 import {
   Container,
   ContainerNavigation,
   ContainerTopic,
-  ContainerIcon,
+  Topic,
   ContainerGetStart,
   ArrowRight,
   ArrowUp,
-  Html,
-  Css,
-  Javascript,
-  Api,
-  React,
 } from './DocsNavigation.styles'
+import { NavigationDataType } from './DocsNavigation.types'
 
 export const DocsNavigation: React.FC = () => {
-  const [topics, setTopics] = useState([
-    {
-      topic: 'HTML',
-      toggle: false,
-      icon: <Html src='/assets/img/svg/html.svg' />,
-    },
-    {
-      topic: 'CSS',
-      toggle: false,
-      icon: <Css src='/assets/img/svg/css.svg' />,
-    },
-    {
-      topic: 'JAVASCRIPT',
-      toggle: false,
-      icon: <Javascript src='/assets/img/svg/js.svg' />,
-    },
-    {
-      topic: 'API',
-      toggle: false,
-      icon: <Api src='/assets/img/svg/api.svg' />,
-    },
-    {
-      topic: 'REACT',
-      toggle: false,
-      icon: <React src='/assets/img/svg/react.svg' />,
-    },
-  ])
+  useEffect(() => {
+    fetch('/data.json')
+      .then(req => req.json())
+      .then((json: NavigationDataType[]) => setNavigationData(json))
+  }, [])
 
-  const accordionToggle = (idx: number): void => {
-    setTopics(prev =>
-      [...prev].map((obj, indx) =>
-        idx === indx
-          ? { ...obj, toggle: !obj.toggle }
-          : { ...obj, toggle: false },
-      ),
-    )
-  }
+  const [navigationData, setNavigationData] = useState<NavigationDataType[]>([])
+  const [toggle, setToggle] = useState<number | null>(null)
+  const accordionToggle = (idx: number): void =>
+    toggle === idx ? setToggle(null) : setToggle(idx)
 
   return (
     <Container>
@@ -60,27 +30,25 @@ export const DocsNavigation: React.FC = () => {
           <ContainerGetStart>Get Started</ContainerGetStart>
         </ContainerTopic>
         <div>
-          {topics.map((object, idx) => (
+          {navigationData.map((obj, idx) => (
             <div>
               <ContainerTopic onClick={() => accordionToggle(idx)}>
-                <ContainerIcon>{object.icon}</ContainerIcon>
-                <span>{object.topic}</span>
-                <div>
-                  {object.toggle ? (
-                    <ArrowUp src='/assets/img/svg/arrow_up.svg' />
-                  ) : (
-                    <ArrowRight src='/assets/img/svg/arrow_right.svg' />
-                  )}
-                </div>
+                <Topic>{obj.subject.toUpperCase()}</Topic>
+                {idx === toggle ? (
+                  <ArrowUp src='/assets/img/svg/arrow_up.svg' />
+                ) : (
+                  <ArrowRight src='/assets/img/svg/arrow_right.svg' />
+                )}
               </ContainerTopic>
               <div>
-                {object.toggle && (
-                  <div>
-                    <p>Questions 1</p>
-                    <p>Questions 2</p>
-                    <p>Questions 3</p>
-                  </div>
-                )}
+                <div>
+                  {idx === toggle &&
+                    obj.themes.map(thema => (
+                      <NavLink to={`${obj.subject}/${thema.slug}`}>
+                        <p>- {thema.topic}</p>
+                      </NavLink>
+                    ))}
+                </div>
               </div>
             </div>
           ))}

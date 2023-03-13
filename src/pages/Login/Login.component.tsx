@@ -34,7 +34,7 @@ export const Login: React.FC = () => {
     <Container>
       <ContainerImg>
         <NavLink to='/'>
-          <Arrow src='assets/img/svg/arrow_left.svg' />
+          <Arrow src='/assets/img/svg/arrow_left.svg' />
         </NavLink>
       </ContainerImg>
       <ContainerLogin>
@@ -42,8 +42,8 @@ export const Login: React.FC = () => {
         <Flexbox direction='column' align='center'>
           <p>Express login with Google and Github</p>
           <div>
-            <Google src='assets/img/svg/google.svg' />
-            <GitHub src='assets/img/svg/github.svg' />
+            <Google src='/assets/img/svg/google.svg' />
+            <GitHub src='/assets/img/svg/github.svg' />
           </div>
         </Flexbox>
         <form onSubmit={formik.handleSubmit} style={{ width: '40%' }}>

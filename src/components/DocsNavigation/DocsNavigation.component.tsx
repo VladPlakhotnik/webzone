@@ -26,9 +26,11 @@ export const DocsNavigation: React.FC = () => {
   return (
     <Container>
       <ContainerNavigation>
-        <ContainerTopic>
-          <ContainerGetStart>Get Started</ContainerGetStart>
-        </ContainerTopic>
+        <NavLink to='/docs'>
+          <ContainerTopic>
+            <ContainerGetStart>Get Started</ContainerGetStart>
+          </ContainerTopic>
+        </NavLink>
         <div>
           {navigationData.map((obj, idx) => (
             <div>
@@ -41,7 +43,7 @@ export const DocsNavigation: React.FC = () => {
                 )}
               </ContainerTopic>
               <div>
-                <div>
+                <div style={{ paddingLeft: '1rem' }}>
                   {idx === toggle &&
                     obj.themes.map(thema => (
                       <NavLink to={`${obj.subject}/${thema.slug}`}>

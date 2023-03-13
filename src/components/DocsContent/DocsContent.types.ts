@@ -1,6 +1,6 @@
 interface AccordionTypes {
   question: string
-  answer: string
+  answer: string | boolean
 }
 
 export interface ThemesTypes {

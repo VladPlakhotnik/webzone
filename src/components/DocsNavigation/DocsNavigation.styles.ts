@@ -9,45 +9,31 @@ export const ContainerNavigation = styled.div`
 `
 export const ContainerTopic = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
   display: flex;
   padding: 1rem 0;
   &:hover {
     cursor: pointer;
-    border-radius: 1rem;
+    border-radius: 0 1rem 1rem 0;
     background-color: #343a46;
   }
 `
+export const Topic = styled.span`
+  width: 70%;
+`
 export const ContainerGetStart = styled.div`
-  width: 100%;
+  width: 70%;
   text-align: center;
   font-weight: 400;
+  border-bottom: 1px solid #fff;
 `
 export const ContainerIcon = styled.div`
   margin: 0 1rem;
 `
 export const ArrowRight = styled.img`
   width: 1rem;
-  margin-right: 1rem;
 `
 export const ArrowUp = styled.img`
-  width: 1rem;
-  margin-right: 1rem;
-`
-export const Html = styled.img`
-  width: 1rem;
-`
-export const Css = styled.img`
-  width: 1rem;
-`
-export const Javascript = styled.img`
-  width: 1rem;
-`
-export const Api = styled.img`
-  width: 1rem;
-`
-export const React = styled.img`
   width: 1rem;
 `

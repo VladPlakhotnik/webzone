@@ -4,7 +4,5 @@ interface AccordionQuez {
 }
 
 export interface AccordionTypes {
-  toggle: boolean
-  topic: string
   accordion: AccordionQuez
 }

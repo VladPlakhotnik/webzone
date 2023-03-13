@@ -1,18 +1,37 @@
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { ContainerContent } from './DocsContent.styles'
+import { ContainerContent, Container } from './DocsContent.styles'
 import { AccordionDocs } from '../AccordionDocs'
+import { ContentDataType, ThemesTypes } from './DocsContent.types'
 
 export const DocsContent: React.FC = () => {
-  const { id } = useParams()
+  const [contentData, setContentData] = useState<ContentDataType[]>([])
+  const [topicValue, setTopicValue] = useState<ThemesTypes>()
+  const { subjectId, topicId } = useParams()
+
+  useEffect(() => {
+    fetch('/data.json')
+      .then(req => req.json())
+      .then((json: ContentDataType[]) => setContentData(json))
+  }, [])
+
+  useEffect(() => {
+    const subject = contentData.find(obj => obj.subject === subjectId)
+    const theme = subject?.themes.find(topic => topic.slug === topicId)
+
+    setTopicValue(theme)
+  }, [contentData, subjectId, topicId])
 
   return (
     <ContainerContent>
-      <h1>{id}</h1>
-      <AccordionDocs
-        toggle={false}
-        topic='Html'
-        accordion={{ question: '1', answer: '2' }}
-      />
+      <Container>
+        <div>
+          <h1 style={{ marginBottom: '50px' }}>{topicValue?.topic}</h1>
+          {topicValue?.['question-answer'].map(qa => (
+            <AccordionDocs accordion={qa} />
+          ))}
+        </div>
+      </Container>
     </ContainerContent>
   )
 }

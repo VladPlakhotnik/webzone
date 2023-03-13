@@ -1,17 +1,5 @@
-import { useState } from 'react'
 import { useFormik } from 'formik'
-import {
-  CVStepperContainer,
-  Span,
-  P,
-  Button,
-  Box,
-  Stepper,
-  Step,
-  StepLabel,
-  Icon,
-  Input,
-} from './CVStepper.styles'
+import { CVStepperContainer, Input } from './CVStepper.styles'
 import { Flexbox } from '../../common/components/Flexbox'
 import { CVPersonalInfoType } from './CVStepper.types'
 import { validationSchema } from '../../common/utils/validate'

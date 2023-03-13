@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { ContainerContent, Container } from './DocsContent.styles'
+import { ContainerContent, Container, H1 } from './DocsContent.styles'
 import { AccordionDocs } from '../AccordionDocs'
 import { ContentDataType, ThemesTypes } from './DocsContent.types'
 
@@ -26,7 +26,7 @@ export const DocsContent: React.FC = () => {
     <ContainerContent>
       <Container>
         <div>
-          <h1 style={{ marginBottom: '50px' }}>{topicValue?.topic}</h1>
+          <H1>{topicValue?.topic}</H1>
           {topicValue?.['question-answer'].map(qa => (
             <AccordionDocs accordion={qa} />
           ))}

@@ -6,6 +6,7 @@ import { Login } from './pages/Login'
 import { SignUp } from './pages/SignUp'
 import { DocsLayout } from './components/Layouts/DocsLayout'
 import { DocsContent } from './components/DocsContent'
+import { DocsWelcome } from './components/DocsWelcome'
 
 export const App: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ export const App: React.FC = () => {
         <Route path='*' element={<ErrorPage />} />
       </Route>
       <Route path='/docs' element={<DocsLayout />}>
-        <Route index element={<DocsContent />} />
+        <Route index element={<DocsWelcome />} />
         <Route path=':subjectId/:topicId' element={<DocsContent />} />
       </Route>
       <Route path='/login' element={<Login />} />

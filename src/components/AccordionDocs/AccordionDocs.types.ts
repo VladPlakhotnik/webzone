@@ -1,6 +1,6 @@
 interface AccordionQuez {
   question: string
-  answer?: string
+  answer: string | boolean
 }
 
 export interface AccordionTypes {

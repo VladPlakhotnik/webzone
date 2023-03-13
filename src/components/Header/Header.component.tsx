@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
           <NavLink to='/docs'>
             <Link>Docs</Link>
           </NavLink>
-          <NavLink to='/support'>
+          <NavLink to='/pricing'>
             <Link>Pricing</Link>
           </NavLink>
           <NavLink to='/careers'>
